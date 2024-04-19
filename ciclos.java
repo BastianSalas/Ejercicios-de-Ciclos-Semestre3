@@ -50,4 +50,28 @@ public class ciclos {
     }
 
 ///////////////////////////////////////////////////////////////////////////////////////
+
+    public static void ciclo7(int numero, int suma, int limite) {
+        
+        if (numero <= limite) {
+            if (numero % 2 != 0) {
+                suma += numero;
+            }
+            ciclo7(numero + 1, suma, limite);
+        } else {
+            System.out.println(suma);
+        }
+    }
+
+    public static void mostrarciclo7() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese un numero para sumar sus impares: ");
+        int a = scanner.nextInt();
+ 
+        ciclo7(1, 0, a);
+    }
+
+///////////////////////////////////////////////////////////////////////////////////////
 }

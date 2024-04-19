@@ -63,7 +63,7 @@ public class menu {
                     break;
 
                 case 7:
-                    //funcion();
+                    ciclos.mostrarciclo7();
                     break;
                     
                 case 8:
@@ -124,7 +124,7 @@ public class menu {
                 default:
                     System.out.println("Opción no válida. Por favor, ingrese una opción válida (1-5).");
             }
-        } while (goku != 5);
+        } while (goku != 21);
 
         scanner.close();
     }
